@@ -44,10 +44,11 @@ public class Luk extends Actor
         //Movimentação para esquerda e direita.
         if(Greenfoot.isKeyDown("a") && getX() > 0){
             setLocation(getX() - 4, getY());
-        }else
-        if(Greenfoot.isKeyDown("d") && getX() < 1198){
+        }else if(Greenfoot.isKeyDown("d") && getX() < 1198){
             setLocation(getX() + 4, getY());    
-        }else{MyWorld.arrumaCenario = 0;}
+        }else {
+            MyWorld.arrumaCenario = 0;
+        }
 
         //Movimentação para o pulo.
         if(Greenfoot.isKeyDown("space") && Greenfoot.isKeyDown("shift")){

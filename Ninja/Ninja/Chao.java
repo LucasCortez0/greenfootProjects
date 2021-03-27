@@ -19,14 +19,11 @@ public class Chao extends Actor
     private void movimento(){
         if(Greenfoot.isKeyDown("a") && getX() < 750 && MyWorld.arrumaCenario == 1){
             move(2);
-        }else
-        if(Greenfoot.isKeyDown("d") && getX() > 450 && MyWorld.arrumaCenario == 1){
+        }else if(Greenfoot.isKeyDown("d") && getX() > 450 && MyWorld.arrumaCenario == 1){
             move(-2);
-        }else
-        if(Greenfoot.isKeyDown("a") && getX() < 750){
+        }else if(Greenfoot.isKeyDown("a") && getX() < 750){
             move(1);
-        }else
-        if(Greenfoot.isKeyDown("d") && getX() > 450){
+        }else if(Greenfoot.isKeyDown("d") && getX() > 450){
             move(-1);
         }
     }
