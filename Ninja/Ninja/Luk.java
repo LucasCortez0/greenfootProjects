@@ -47,7 +47,7 @@ public class Luk extends Actor
         }else if(Greenfoot.isKeyDown("d") && getX() < 1198){
             setLocation(getX() + 4, getY());    
         }else {
-           
+            MyWorld.arrumaCenario = 0;
         }
 
         //Movimentação para o pulo.
